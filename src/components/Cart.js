@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { CartState } from "../context/Context";
 import { Button, Col, Form, Image, ListGroup, Row } from "react-bootstrap";
-import Rating from "./Rating";
+import { CartState } from "../context/Context";
 import { AiFillDelete } from "react-icons/ai";
+import Rating from "./Rating";
 
 const Cart = () => {
   const { state, dispatch } = CartState();
@@ -31,7 +31,7 @@ const Cart = () => {
                 </Col>
                 <Col md={2}>Rs.{prod.price}</Col>
                 <Col md={2}>
-                  <Rating rating={prod.rating}></Rating>
+                  <Rating rating={prod.ratings}></Rating>
                 </Col>
                 <Col md={2}>
                   <Form.Control
